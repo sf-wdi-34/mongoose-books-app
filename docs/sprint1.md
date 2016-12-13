@@ -105,7 +105,7 @@ We've already provided a `models/index.js` for you to use.  If you take a look i
 
 Take a quick look in `seed.js`.  You should see that it does a `require('./models');` and then later uses `db.Book.create` to load some data into the database.  (The insightful student will also note that it tries to clear the `book-app` database first by deleting all the records.)
 
-**What's a seed-file you ask?**
+**What's a seed file, you ask?**
 > A seed file is a file used to load pre-made data into our database.  It let's us start-up our app without having to key in starter data each time.
 
 1. Try running `node seed.js` in your terminal.
