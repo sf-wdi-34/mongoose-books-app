@@ -4,9 +4,10 @@ _HINT_: open Robomongo and refresh it regularly to check on your database items.
 
 ## 1. You enter a vast building full of books.
 
-1. To start this sprint, checkout the correct branch (you need to have all the changes in your current branch checked in to checkout a new branch):
+1. **To start this sprint, checkout the correct branch (you need to have all the changes in your current branch committed in order to checkout a new branch):**
   ```
   git checkout starting-point-sprint-2
+  git checkout my-work-sprint-2
   ```
 
 1. At this point, you should have a node app set up to serve data about books and even allow users to add books, change them, and delete them. Look through any code in `server.js` and in the `models` directory that's new to you.
