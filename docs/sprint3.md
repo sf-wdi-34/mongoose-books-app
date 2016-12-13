@@ -3,7 +3,7 @@
 
 **To start this sprint, checkout the correct branch (you need to have all the changes in your current branch committed in order to checkout a new branch):**
   ```
-  git checkout starting-point-sprint-2
+  git checkout starting-point-sprint-3
   git checkout my-work-sprint-3
   ```
   
