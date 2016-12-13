@@ -26,10 +26,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 ////////////////////
-//  ROUTES
+//  DATA
 ///////////////////
 
+// removed! in database now!
 
+
+
+////////////////////
+//  ROUTES
+///////////////////
 
 
 // define a root route: localhost:3000/
@@ -48,8 +54,8 @@ app.get('/api/books', function (req, res) {
 
 // get one book
 app.get('/api/books/:id', function (req, res) {
-  db.Books.findOne({_id: req.params.id }, function(err, data) {
-    res.json(data);
+  db.Books.findOne({_id: req.params.id }, function(err, bookData) {
+    res.json(bookData);
   });
 });
 
@@ -73,6 +79,12 @@ app.delete('/api/books/:id', function (req, res) {
   db.Book.findOneAndRemove({ _id: bookId }, function (err, deletedBook) {
     res.json(deletedBook);
   });
+  // alternately:
+  // db.Book.findOne({ _id: bookId }, function(err, foundBook){
+  //   foundBook.remove(function(err, deletedBook){
+  //     res.json(deletedBook);
+  //   });
+  // });
 });
 
 
@@ -80,5 +92,5 @@ app.delete('/api/books/:id', function (req, res) {
 
 
 app.listen(process.env.PORT || 3000, function () {
-  console.log('Example app listening at http://localhost:3000/');
+  console.log('Book app listening at http://localhost:3000/');
 });

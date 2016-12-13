@@ -1,16 +1,34 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> Express Practice
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> Book App
 
-## Pre-requisites
+##Deliverables
 
-* express
-* intro to mongoose
-* jQuery and AJAX
+Fork this repo & push work to your remote fork.
 
-## Base Challenges - Build an App using mongoDB and mongoose
+## Prerequisites
 
-We're going to take this app piece by piece over the next day or so and build it up.
+* Express
+* Mongo
+* Mongoose
+* jQuery
+* AJAX
 
-At first it's going to be a list of **books**.  Later we'll add in **authors** and embed **character** data in each book.
+## Exercise
 
+We'll be building a full stack javascript app incrementally.
 
-[Sprint 1 - mongoose](docs/sprint1.md)
+* At first it's going to be a list of **books**
+* Then we'll add in **authors**
+* Finally we'll embed **character** data in each book
+
+####[Sprint 1 - Mongoose](docs/sprint1.md)
+
+Database Setup
+
+####[Sprint 2 - Reference & Populate](docs/sprint2.md)
+
+Let's create an **author** model that gets referenced in the **book** model!
+
+####[Sprint 3 - Embedded](docs/sprint3.md)
+Let's create a **character** model that gets embedded in the **book** model!
+
+>Note: Find incremental example solutions by checking-out the branches of this repo.
