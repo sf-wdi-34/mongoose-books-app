@@ -1,5 +1,13 @@
 # Sprint 3 - Embedded documents
 
+
+**To start this sprint, checkout the correct branch (you need to have all the changes in your current branch committed in order to checkout a new branch):**
+  ```
+  git checkout starting-point-sprint-2
+  git checkout my-work-sprint-3
+  ```
+  
+  
 ## 1. Many unique characters belong to each book!
 
 That's right we're going to add Characters to each of the books.
