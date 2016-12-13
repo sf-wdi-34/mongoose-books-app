@@ -1,5 +1,11 @@
 # Sprint 1 - mongoDB & mongoose
 
+**To start this sprint, check out a new branch for you to work on for sprint 1. Make sure it starts with the code from the master branch:**
+  ```
+  git checkout master
+  git checkout -b my-work-sprint-1
+  ```
+
 ## 1. You awake inside a new app and look around.
 
 1. Take a few minutes to familiarize yourself with your surroundings and navigate the file structure of this app.  You should see a few routes listed in `server.js`; a basic front-end using them, a few files in public including your front-end JavaScript.  
