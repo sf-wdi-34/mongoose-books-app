@@ -47,11 +47,15 @@ function render () {
   // empty existing posts from view
   $booksList.empty();
 
-  // pass `allBooks` into the template function
-  var booksHtml = template({ books: allBooks });
+  var bookHtml;
 
-  // append html to the view
-  $booksList.append(booksHtml);
+  // for each book:
+  allBooks.forEach(function(bookData){
+    // create HTML for individual book
+    bookHtml = template({book: bookData});
+    // add book to page
+    $booksList.append(bookHtml);
+  });
 };
 
 function handleSuccess(json) {
@@ -76,9 +80,8 @@ function newBookError() {
 
 function deleteBookSuccess(json) {
   var book = json;
-  console.log(json);
+  console.log('deleted book', book);
   var bookId = book._id;
-  console.log('delete book', bookId);
   // find the book with the correct ID and remove it from our allBooks array
   for(var index = 0; index < allBooks.length; index++) {
     if(allBooks[index]._id === bookId) {
