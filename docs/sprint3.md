@@ -1,5 +1,13 @@
 # Sprint 3 - Embedded documents
 
+
+**To start this sprint, commit and push your work from before. You need to have all the changes in your current branch committed in order to checkout a new branch.  Then, check out the next starting branch and make a new branch for your work:**
+  ```
+  git push origin my-work-sprint-2
+  git checkout starting-point-sprint-3
+  git checkout -b my-work-sprint-3
+  ```
+
 ## 1. Many unique characters belong to each book!
 
 That's right we're going to add Characters to each of the books.
