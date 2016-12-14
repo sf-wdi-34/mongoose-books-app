@@ -2,8 +2,9 @@
 
 _HINT_: open Robomongo and refresh it regularly to check on your database items.
 
-**To start this sprint, checkout the correct branch (you need to have all the changes in your current branch committed in order to checkout a new branch):**
+**To start this sprint, commit and push your work from before. You need to have all the changes in your current branch committed in order to checkout a new branch.  Then, check out the next starting branch and make a new branch for your work:**
   ```
+  git push origin my-work-sprint-1
   git checkout starting-point-sprint-2
   git checkout -b my-work-sprint-2
   ```
