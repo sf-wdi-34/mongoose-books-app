@@ -44,11 +44,7 @@ Since Characters will be embedded we can create it's schema either in its own fi
 
   <details><summary>don't remember?  click here</summary>
     ```js
-    characters: [CharacterSchema]  // if you've required the schema object
-    ```
-    or
-    ```js
-    characters: [Character.schema] // if you only required the model object
+    characters: [CharacterSchema]  
     ```
   </details>
 
